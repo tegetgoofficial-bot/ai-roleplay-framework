@@ -1,3 +1,4 @@
+@tegetgoofficial-bot
 # 🎭 Custom Local AI Role-Play Framework
 
 A lightweight, high-performance Python framework for running isolated local AI role-play sessions using Ollama and the Microsoft Phi-3 model. 
