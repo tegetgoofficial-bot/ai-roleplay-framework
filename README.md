@@ -30,8 +30,8 @@ This framework requires **Python 3.12+**, **Git**, and the **Ollama Desktop Appl
 ### 2. Download the Repository
 Clone this codebase using Git and navigate into the workspace directory:
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL_HERE>
-cd local-ai-roleplay
+git clone https://github.com
+cd ai-roleplay-framework
 ```
 
 ### 3. Install Dependencies
