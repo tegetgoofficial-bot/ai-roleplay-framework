@@ -7,7 +7,7 @@ if __name__ == "__main__":
     
     # Simulate a user input and get a response from the bot
     user_input = "Hello, how are you?"
-    bot.response = bot.get_response(user_input)  # This would typically be set by the get_response method after processing the user input
+    bot.get_response(user_input)  # This would typically be set by the get_response method after processing the user input
     sanatised_response = bot._sanatise_response()  # This method would need to be implemented in the ChatBot class to process the user input and generate a response
     bot.show_output(sanatised_response)  # This method would need to be implemented in the ChatBot class to process the user input and generate a response
 
@@ -18,6 +18,11 @@ if __name__ == "__main__":
     sanatised_response = bot._sanatise_response()  # This method would need to be implemented in the ChatBot class to process the user input and generate a response
     bot.show_output(sanatised_response)  # This method would need to be implemented in the ChatBot class to process the user input and generate a response
     
+    # Built in debugging method to print the current state of the bot
+    debugger.set_debug_mode(True)  # Enable debug mode to print the current state of the bot
+    # Built in chat loop  for easy user interaction with the bot
+    bot.chat()  # This method would need to be implemented in the ChatBot class to start a chat loop with the user
+
     # For demonstration, let's just print the current history
     for entry in bot.history:
         print(entry)
